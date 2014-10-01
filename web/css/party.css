@@ -1,0 +1,24 @@
+.party-head-nav {
+    -webkit-box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    position: relative;
+}
+
+.party-overlay {
+    position: relative;
+}
+
+.party-overlay-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.party-date {
+
+}
+

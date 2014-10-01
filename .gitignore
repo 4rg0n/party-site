@@ -1,2 +1,4 @@
 .idea
 atlassin-ide-plugin.xml
+vendor
+composer.lock

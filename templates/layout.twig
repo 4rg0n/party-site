@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title 'Party' %}</title>
+
+        <link href="{{ app.request.basepath }}/css/uikit.gradient.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ app.request.basepath }}/css/party.css" rel="stylesheet" type="text/css" />
+        <link href="{{ app.request.basepath }}/css/flipclock.css" rel="stylesheet" type="text/css" />
+
+        <style>[ng-cloak] { display: none; }</style>
+
+        <script src="{{ app.request.basepath }}/js/lib/modernizr.min.js"></script>
+        <script src="{{ app.request.basepath }}/js/lib/jquery-2.1.1.min.js"></script>
+        <script src="{{ app.request.basepath }}/js/lib/uikit.min.js"></script>
+    </head>
+    <body ng-app="partySite">
+        {% block content %}{% endblock %}
+    </body>
+</html>

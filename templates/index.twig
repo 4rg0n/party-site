@@ -1,0 +1,32 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    {% if is_granted('ROLE_USER') %}
+
+        {% include 'site/site.twig' %}
+
+    {% else %}
+
+        <!-- Login -->
+        <div class="uk-width-medium-1-6 uk-container-center">
+            <div class="uk-panel-box uk-margin-top">
+                <form class="uk-form" action="{{ path('login_check') }}" method="post">
+                    <fieldset>
+                        <legend>Login</legend>
+                        <div class="uk-form-row"><input placeholder="Username" id="username" type="text" name="_username"></div>
+                        <div class="uk-form-row"><input placeholder="Password" id="password" type="password" name="_password"></div>
+                        <div class="uk-form-row"><input class="uk-button" type="submit" value="Log in"></div>
+                    </fieldset>
+
+                    {% if error %}
+                        <div class="uk-alert uk-alert-danger">
+                            <p>{{ error }}</p>
+                        </div>
+                    {% endif %}
+                </form>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+

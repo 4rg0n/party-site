@@ -1,0 +1,24 @@
+<nav class="uk-navbar party-head-nav">
+    <a class="uk-navbar-brand uk-animation-scale-down" href="{{ app.request.basepath }}" ng-bind-html="party.name"></a>
+
+    <div class="uk-navbar-content">
+        <span class="uk-text-small">{[party.date]}</span>
+    </div>
+
+    <div class="uk-navbar-content uk-navbar-flip  uk-hidden-small">
+        <a href="{{ path('logout') }}" class="uk-button uk-button-danger">Raus hier!</a>
+    </div>
+</nav>
+
+<div class="party-overlay">
+    <img ng-src="{{ app.request.basepath }}/{[party.headerImage]}" />
+    <div class="party-overlay-area">
+
+        <div class="uk-width-medium-1-3 uk-container-center uk-margin-top uk-animation-slide-top uk-animation-10">
+            <div class="uk-align-center uk-vertical-align">
+                <div class="party-clock"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
