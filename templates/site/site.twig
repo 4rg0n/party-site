@@ -5,6 +5,38 @@
 
     {% include 'site/head.twig' %}
 
+    <div class="uk-grid">
+
+        <div class="uk-width-large-1-1 party-content uk-margin-left uk-margin-top uk-margin-right">
+
+            <article ng-show="party.about" class="uk-article">
+                <h1 class="uk-article-title">About</h1>
+                <p ng-bind-html="party.about"></p>
+                <hr class="uk-article-divider">
+            </article>
+
+            <article ng-show="party.location" class="uk-article">
+                <h1 class="uk-article-title">Location</h1>
+                <p></p>
+                <hr class="uk-article-divider">
+            </article>
+
+            <article ng-show="party.images" class="uk-article">
+                <h1 class="uk-article-title">Location</h1>
+                <p></p>
+                <hr class="uk-article-divider">
+            </article>
+
+            <article ng-show="party.comments" class="uk-article">
+                <h1 class="uk-article-title">Location</h1>
+                <p></p>
+                <hr class="uk-article-divider">
+            </article>
+
+        </div>
+
+    </div>
+
     {% include 'site/foot.twig' %}
 </div>
 

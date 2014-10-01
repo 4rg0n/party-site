@@ -1,3 +1,12 @@
+body {
+   background: #fafafa;
+}
+
+.party-content {
+    color: #222;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
 .party-head-nav {
     -webkit-box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
     -moz-box-shadow:0 10px 10px rgba(0, 0, 0, 0.7);
