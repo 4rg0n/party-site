@@ -5,33 +5,19 @@
 
     {% include 'site/head.twig' %}
 
-    <div class="uk-grid">
+    <div class="uk-width-medium-1-2 uk-container-center">
 
-        <div class="uk-width-large-1-1 party-content uk-margin-left uk-margin-top uk-margin-right">
+        <!-- TODO Laden der Templates ist bugged, über AngularJS laden? -->
 
-            <article ng-show="party.about" class="uk-article">
-                <h1 class="uk-article-title">About</h1>
-                <p ng-bind-html="party.about"></p>
-                <hr class="uk-article-divider">
-            </article>
+        <div class="party-content uk-margin-top uk-margin-bottom">
 
-            <article ng-show="party.location" class="uk-article">
-                <h1 class="uk-article-title">Location</h1>
-                <p></p>
-                <hr class="uk-article-divider">
-            </article>
+            {% include 'site/article/about.twig' %}
 
-            <article ng-show="party.images" class="uk-article">
-                <h1 class="uk-article-title">Location</h1>
-                <p></p>
-                <hr class="uk-article-divider">
-            </article>
+            {% include 'site/article/location.twig' %}
 
-            <article ng-show="party.comments" class="uk-article">
-                <h1 class="uk-article-title">Location</h1>
-                <p></p>
-                <hr class="uk-article-divider">
-            </article>
+            {% include 'site/article/gallery.twig' %}
+
+            {% include 'site/article/comment.twig' %}
 
         </div>
 

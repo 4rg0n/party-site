@@ -6,7 +6,7 @@
  * @copyright Copyright (c) 2014 Sandboxer-Online
  */
 var partySite = angular.module('partySite', ['ngRoute', 'ngSanitize'])
-    .config(function($routeProvider, $interpolateProvider) {
+    .config(function($routeProvider, $interpolateProvider, $sceDelegateProvider) {
         'use strict';
 
         $routeProvider
@@ -20,5 +20,13 @@ var partySite = angular.module('partySite', ['ngRoute', 'ngSanitize'])
         $interpolateProvider
             .startSymbol('{[')
             .endSymbol(']}');
+
+        $sceDelegateProvider
+            .resourceUrlWhitelist([
+                //Allow same origin resource loads.
+                'self',
+                //Allow loading resources from google
+                'https://www.google.com/**'
+            ]);
 
     });
