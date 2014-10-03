@@ -4,11 +4,10 @@
  * @module partySite
  * @author Dominic Rönicke <dominic.roenicke@sandboxer-online.de>
  * @license MIT <http://opensource.org/licenses/MIT>
- * @copyright Copyright (c) 2014 Sandboxer-Online
  */
 partySite.factory('config', [function() {
     return {
-        name: 'R&ouml;nickes Party!',
+        name: 'My Party!',
         headerImage: 'img/header.png',
         clock: {
             cssClass: 'party-clock',

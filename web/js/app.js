@@ -26,7 +26,8 @@ var partySite = angular.module('partySite', ['ngRoute', 'ngSanitize'])
                 //Allow same origin resource loads.
                 'self',
                 //Allow loading resources from google
-                'https://www.google.com/**'
+                'https://www.google.com/**',
+                //Allow loading resources from livefyre
+                'http://*.livefyre.com/**'
             ]);
-
     });
